@@ -1,0 +1,895 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* body */
+
+body {
+  width: 100%;
+}
+
+html {
+  background: rgb(0, 0, 0);
+  background-size: cover;
+  font-family: Segoe UI 9pt;
+  color: white;
+
+
+}
+
+
+
+/* nav */
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.849);
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.225);
+  border-bottom: 2px solid rgba(255, 0, 0, 1);
+  position: fixed;
+  z-index: 10;
+  font-size: larger;
+}
+
+.Navbarmarginer {
+  height: 76px;
+}
+
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact {
+  height: 70px;
+  width: 160px;
+  border-radius: 50px;
+
+}
+
+.Home {
+  color: white;
+  margin-left: 40px;
+
+}
+
+button {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+span {
+  border: 1px solid rgba(255, 255, 255, 0.275);
+  padding: 10px;
+  margin-left: 23px;
+  border: none;
+}
+
+/* navend */
+
+
+/* nav font increase */
+
+.IncreaseFont {
+  font-size: x-large;
+}
+
+
+/* nav font increase end */
+
+
+
+/* footer */
+
+
+footer {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* footer end */
+
+
+/* three line menu */
+
+
+.r {
+  background-color: red;
+  height: 5px;
+  width: 35px;
+  margin-top: 5px;
+  position: relative;
+  right: 16px;
+  bottom: 4px;
+}
+
+.r1 {
+  transition: transform 0.5s ease;
+  border: none;
+}
+
+.r11 {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 1px;
+}
+
+.r22 {
+  display: none;
+}
+
+
+.r3 {
+  transition: transform 0.5s ease;
+}
+
+.r33 {
+  transform: rotate(45deg);
+  position: relative;
+  top: -9px;
+}
+
+.ThreeLinesThese {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  padding-left: 24px;
+  padding-top: 4px;
+
+  border: none;
+
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: radial-gradient(76% 151% at 52% 5%, rgba(255, 255, 255, 0.23) 0%, transparent 100%);
+
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+
+  position: fixed;
+  left: 15px;
+  top: 15px;
+
+  z-index: 30;
+
+}
+
+
+.MenuBar {
+  display: none;
+  height: 100vh;
+  width: 22vw;
+  background-color: black;
+  position: fixed;
+  z-index: 20;
+  animation: MoveLeft linear 0.15s;
+  border-right: 1px solid rgba(255, 0, 0, 0.748);
+
+}
+
+.HideMenuBar {
+
+  width: 22vw;
+  display: block;
+  z-index: 20;
+  animation: MoveRight linear 0.15s;
+}
+
+
+@keyframes MoveRight {
+
+  0% {
+
+    width: 0;
+
+  }
+
+  100% {
+
+    width: 22vw;
+
+  }
+
+}
+
+
+@keyframes MoveLeft {
+
+  0% {
+
+    width: 22vw;
+
+  }
+
+  100% {
+
+    width: 0;
+
+  }
+
+}
+
+
+
+.ViewAllDetails {
+
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  text-align: end;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.801);
+
+
+}
+
+.DetalisListsHeading {
+  padding-left: 5%;
+}
+
+.DetalisLists {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 65px;
+  text-align: center;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.651);
+  box-shadow: none;
+  border-radius: 0px;
+  font-weight: lighter;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: large;
+  padding: 20px;
+  border: 1px solid rgba(255, 0, 0, 0.089);
+  /* animation: MoveRight linear 0.15s; */
+
+
+
+}
+
+.MoveLefts {
+
+  animation: MoveLeft linear 0.15s;
+
+}
+
+.MoveRights {
+
+  animation: MoveRight linear 0.15s;
+
+}
+
+.DetalisLists:hover {
+  background-color: rgb(31, 35, 37);
+  cursor: pointer;
+
+}
+
+.ChangeMenuButton {
+
+  background-image: none;
+
+  box-shadow: none;
+}
+
+
+/* three line menu end */
+
+
+
+/* screens */
+
+
+.HomeScreen,
+.InstaScreen,
+.YoutubeScreen,
+.TelegramScreen,
+.ContactScreen {
+
+  min-height: 95vh;
+  width: 100%;
+  display: none;
+  /* background-color: aqua; */
+  /* border: 2px solid #fc4; */
+
+}
+
+
+.InstaMax {
+
+  min-height: 95vh;
+  width: 100%;
+  background-color: rgb(31, 35, 37);
+
+}
+
+.YoutubeMax {
+
+  min-height: 95vh;
+  width: 100%;
+  background-color: rgb(31, 35, 37);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .youtubeBox {
+
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    box-shadow: 15px 15px 60px rgba(255, 255, 255, 0.541);
+
+
+    .YoutubeIcon {
+
+      height: 150px;
+      width: 250px;
+      background-color: red;
+      border-radius: 25px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 15px 15px 70px red;
+
+      .YoutubeTriangle {
+
+        height: 0px;
+        width: 0px;
+
+
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 70px solid white;
+        transform: rotateZ(90deg) translateY(-6px);
+
+
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
+
+.TelegramMax {
+
+  min-height: 95vh;
+  width: 100%;
+  background-color: rgb(31, 35, 37);
+
+}
+
+.ContactMax {
+
+  min-height: 95vh;
+  width: 100%;
+  background-color: rgb(31, 35, 37);
+
+}
+
+/* screens end */
+
+
+
+
+
+/* the HomeMax screen */
+
+
+.HomeMax {
+
+  min-height: 95vh;
+  width: 100%;
+  background-color: rgb(31, 35, 37);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+/* animation  */
+
+@keyframes CloseEye {
+
+  0%,
+  100% {
+    height: 0;
+  }
+
+  40%,
+  60% {
+    height: 210px;
+  }
+}
+
+
+
+
+/* the HomeMax screen */
+
+
+
+
+
+/* cart css */
+
+
+
+
+
+.cart-item {
+
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 8px;
+  border: 2px solid red;
+  border-radius: 4px;
+
+}
+
+
+#cart-items {
+
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.cart-item-actions {
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+
+  padding-block-start: 20px;
+
+}
+
+.cart-item-actions button {
+
+
+  margin: 4px;
+  padding: 3px;
+
+}
+
+.cart-item-info {
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  padding-block: 10px;
+
+}
+
+/* cart css end */
+
+
+/* Img Sizing */
+
+
+.GunImg {
+
+  height: 250px;
+  /* width: 350px; */
+  object-fit:contain;
+
+  
+
+ 
+  /* opacity: 0.5; */
+
+}
+
+.GunImgDiv {
+  width: 100%;
+  /* background-color: rgb(0, 0, 255); */
+   background-image: url("blackbg.png");
+
+   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.GunImgDiv :hover {
+  
+  transform: translate(0px,10px);
+  filter: drop-shadow(0px 5px 50px red);
+}
+
+
+/* img sizing end */
+
+
+
+/* updrades & Attachments div */
+
+
+.UpgradesMessage,
+.AttachmentMessage,
+.SkinsMessage {
+
+  height: 80dvh;
+  width: 80dvw;
+  background-color: aqua;
+  /* border-radius: 10px; */
+
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+
+
+}
+
+.WrongBtn {
+
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  transform: translate(0%, 0%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+
+
+
+/* unhidedisplays */
+
+.Unhide {
+  display: block;
+}
+
+#UpgradesBox,#AttachmentBox,#SkinsBox {
+
+  background-color: #c471ed;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+}
+
+
+/* unhidedisplays end */
+
+
+
+/* updrades & Attachments div */
+
+
+
+/* screen Size */
+
+@media only screen and (max-width: 425px) {
+  nav {
+    font-size: medium;
+    height: 60px;
+  }
+
+  .Navbarmarginer {
+    height: 61px;
+  }
+
+  .ThreeLinesThese {
+    width: 40px;
+    height: 40px;
+    left: 8px;
+  }
+
+
+  .r {
+    height: 3px;
+    width: 25px;
+  }
+
+  .r11 {
+    top: 0px;
+  }
+
+  .r33 {
+    top: -8px;
+  }
+
+
+  .cart-item {
+    padding: 15px;
+    margin: 8px;
+  }
+
+  #cart-items {
+    padding: 22px;
+
+  }
+
+  .cart-item-info {
+    font-size: small;
+  }
+
+
+
+  .MenuBar {
+    width: 60vw;
+    font-size: medium;
+  }
+
+  .HideMenuBar {
+    width: 50vw;
+  }
+
+  .ViewAllDetails {
+    height: 30px;
+
+    font-size: larger
+  }
+
+  .DetalisListsHeading {
+    padding-left: 5%;
+  }
+
+  .DetalisLists {
+    height: 45px;
+    width: 50vw;
+    font-size: small;
+  }
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+  nav {
+    font-size: small;
+    height: 60px;
+  }
+
+  .Navbarmarginer {
+    height: 61px;
+  }
+
+  .ThreeLinesThese {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 8px;
+  }
+
+  .Home {
+    margin-left: 48px;
+  }
+
+  .r {
+    height: 3px;
+    width: 25px;
+  }
+
+  .r11 {
+    top: 0px;
+  }
+
+  .r33 {
+    top: -8px;
+  }
+
+
+  .cart-item {
+    padding: 15px;
+    margin: 8px;
+  }
+
+  #cart-items {
+    padding: 22px;
+
+  }
+
+  .cart-item-info {
+    font-size: small;
+  }
+
+  /* nav font increase */
+
+  .IncreaseFont {
+    font-size: large;
+  }
+
+
+  /* nav font increase end */
+
+  .MenuBar {
+    width: 55vw;
+    font-size: medium;
+  }
+
+  .HideMenuBar {
+    width: 55vw;
+  }
+
+  .ViewAllDetails {
+    height: 20px;
+
+    font-size: large
+  }
+
+  .DetalisListsHeading {
+    padding-left: 5%;
+  }
+
+  .DetalisLists {
+    height: 45px;
+    width: 55vw;
+    font-size: small;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  nav {
+    font-size: 10px;
+    height: 56px;
+  }
+
+  .Navbarmarginer {
+    height: 58px;
+  }
+
+  .ThreeLinesThese {
+    width: 35px;
+    height: 35px;
+    left: 8px;
+    top: 10px;
+  }
+
+  .Home {
+    margin-left: 43px;
+  }
+
+
+
+
+  .r {
+    height: 2px;
+    width: 20px;
+  }
+
+  .r11 {
+    top: 0px;
+  }
+
+  .r33 {
+    top: -7px;
+  }
+
+
+  .cart-item {
+    padding: 10px;
+    margin: 8px;
+  }
+
+  #cart-items {
+    padding: 12px;
+
+  }
+
+  .cart-item-info {
+    font-size: small;
+  }
+
+
+  /* nav font increase */
+
+  .IncreaseFont {
+    font-size: medium;
+  }
+
+
+  /* nav font increase end */
+
+
+  .MenuBar {
+    width: 55vw;
+    font-size: medium;
+  }
+
+  .HideMenuBar {
+    width: 55vw;
+  }
+
+  .ViewAllDetails {
+    height: 20px;
+
+    font-size: 16px
+  }
+
+  .DetalisListsHeading {
+    padding-left: 5%;
+  }
+
+  .DetalisLists {
+    height: 45px;
+    width: 55vw;
+    font-size: small;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* screen Size end */
